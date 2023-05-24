@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "KFUvV2uCaM04E+ClwUNbKhwfO3j5SMA3m1od4CPfyzO7iGzJM1Uo8iqTzkdeCJ2sEIpmoN3PlmmrF9I1+7TJOA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RevolutionWin\\source\\repos\\TecHelp\\Server\\Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RevolutionWin\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
+    "C:\\Users\\RevolutionWin\\.nuget\\packages\\controlzex\\4.3.0\\controlzex.4.3.0.nupkg.sha512",
+    "C:\\Users\\RevolutionWin\\.nuget\\packages\\mahapps.metro\\2.0.0\\mahapps.metro.2.0.0.nupkg.sha512",
+    "C:\\Users\\RevolutionWin\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\RevolutionWin\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\RevolutionWin\\.nuget\\packages\\materialdesignthemes.mahapps\\2.1.4-ci267\\materialdesignthemes.mahapps.2.1.4-ci267.nupkg.sha512",
+    "C:\\Users\\RevolutionWin\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\RevolutionWin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\RevolutionWin\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}

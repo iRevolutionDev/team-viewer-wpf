@@ -1,0 +1,48 @@
+﻿<Window x:Class="Client.ClientView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:Client.ViewModels"
+        d:DataContext="{d:DesignInstance Type=viewModels:ClientViewModel, IsDesignTimeCreatable=True}"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="540" Width="800">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <Button FontSize="15" Command="{Binding ConnectCommand}">Connect</Button>
+            <Label FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center">Client ID</Label>
+            <TextBox FontSize="15" Width="200" Text="{Binding TargetClientId}"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}" />
+            <Label FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center">My Client ID:</Label>
+            <Label FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding ClientId}" />
+            <Label FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center">Status:</Label>
+            <Label Foreground="{Binding StatusColor}" FontSize="15" HorizontalAlignment="Center"
+                   VerticalAlignment="Center" Content="{Binding Status}" />
+            <Button FontSize="15" Command="{Binding TakeScreenshotCommand}">Take Screenshot</Button>
+        </StackPanel>
+
+        <StackPanel Background="#404040" DockPanel.Dock="Left" Orientation="Vertical">
+            <TextBlock Text="{Binding HistoryMessages}" FontSize="15" Width="200" Height="390" TextWrapping="Wrap" />
+            <DockPanel DockPanel.Dock="Bottom">
+                <TextBox Text="{Binding Message, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="15"
+                         Width="200"
+                         Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                    <TextBox.InputBindings>
+                        <KeyBinding Key="Enter" Command="{Binding SendMessageCommand}" />
+                    </TextBox.InputBindings>
+                </TextBox>
+                <Button FontSize="15" Command="{Binding SendMessageCommand}">Send</Button>
+            </DockPanel>
+        </StackPanel>
+
+        <Image Source="{Binding Image}" />
+
+    </DockPanel>
+</Window>
